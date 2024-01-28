@@ -1,2 +1,24 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+Problem statement - 
+Your analysis will help Instituion in understanding what factors are 
+important in graduate admissions and how these factors are interrelated among themselves. It will also help predict ones chances of admission given the rest of the variables.
+
+Recommendations-
+
+We have a couple of options:
+1. Add new features GRE_TOEFL_CGPA_Ratio = (GRE & TOEFL Score & CGPA ratio) etc.
+2. Removing outliers or handling outlier by minmax distribution.
+3. By creating some proxy data on skwed area using SMOTE variations
+4. As we can see DT Ensemble models are working good but over fitting so can We finetune those models or we have to design new features(Feature Engineering) 
+by connecting with some domain experts or designing our own features.To reduce variance or model drifting in production.
+5. Try performing nonlinear transformations on variables as we seen in Asumptions tests error not following Normal distribution from that we can infer we need to 
+build some non-linear features
+6. Graduation Admission - Can use the above model to create new feature where students/learners can come to their website and check their probability of getting 
+into the IVY league college. Key features which influence the chance of Admit are
+    1. CGPA
+    2. GRE Score
+    3. TOEFL Score
+    4. LOR
+    5. Research
